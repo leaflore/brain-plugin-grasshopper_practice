@@ -3,4 +3,4 @@ A practice plugin that accesses AI API's from Grasshopper
 
 A project by the Parametric Camp community!
 
-I am learning to use git!
+A roadmap of the goals of the project can be found [on this document](./BRAIN_PLUGIN_NOTES.md).
