@@ -1,13 +1,12 @@
 using System;
 using System.Collections.Generic;
-
 using Grasshopper;
 using Grasshopper.Kernel;
 using Rhino.Geometry;
 
-namespace brain_gh_plugin
+namespace Brain_GH_Plugin.UtilityComps
 {
-    public class brain_gh_Component : GH_Component
+    public class Brain_GH_PluginComponent : GH_Component
     {
         /// <summary>
         /// Each implementation of GH_Component must provide a public 
@@ -16,17 +15,17 @@ namespace brain_gh_plugin
         /// Subcategory the panel. If you use non-existing tab or panel names, 
         /// new tabs/panels will automatically be created.
         /// </summary>
-        public brain_gh_Component()
-          : base("brain_gh_Component", "BrainComponent",
+        public Brain_GH_PluginComponent()
+          : base("Brain_GH_PluginComponent", "ASpi",
             "Construct an Archimedean, or arithmetic, spiral given its radii and number of turns.",
-            "AI - ML", "Primitive")
+            "Curve", "Primitive")
         {
         }
 
         /// <summary>
         /// Registers all the input parameters for this component.
         /// </summary>
-        protected override void RegisterInputParams(GH_Component.GH_InputParamManager pManager)
+        protected override void RegisterInputParams(GH_InputParamManager pManager)
         {
             // Use the pManager object to register your input parameters.
             // You can often supply default values when creating parameters.
@@ -45,7 +44,7 @@ namespace brain_gh_plugin
         /// <summary>
         /// Registers all the output parameters for this component.
         /// </summary>
-        protected override void RegisterOutputParams(GH_Component.GH_OutputParamManager pManager)
+        protected override void RegisterOutputParams(GH_OutputParamManager pManager)
         {
             // Use the pManager object to register your output parameters.
             // Output parameters do not have default values, but they too must have the correct access type.
@@ -102,7 +101,7 @@ namespace brain_gh_plugin
             DA.SetData(0, spiral);
         }
 
-        Curve CreateSpiral(Plane plane, double r0, double r1, Int32 turns)
+        Curve CreateSpiral(Plane plane, double r0, double r1, int turns)
         {
             Line l0 = new Line(plane.Origin + r0 * plane.XAxis, plane.Origin + r1 * plane.XAxis);
             Line l1 = new Line(plane.Origin - r0 * plane.XAxis, plane.Origin - r1 * plane.XAxis);
@@ -148,6 +147,6 @@ namespace brain_gh_plugin
         /// It is vital this Guid doesn't change otherwise old ghx files 
         /// that use the old ID will partially fail during loading.
         /// </summary>
-        public override Guid ComponentGuid => new Guid("66032239-d58e-4904-8427-a43d0c531002");
+        public override Guid ComponentGuid => new Guid("fadad40d-6a32-4ae2-a971-9e2e0af44ea8");
     }
 }

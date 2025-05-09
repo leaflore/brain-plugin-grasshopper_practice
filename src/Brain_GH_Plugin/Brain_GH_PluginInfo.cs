@@ -3,11 +3,11 @@ using System.Drawing;
 using Grasshopper;
 using Grasshopper.Kernel;
 
-namespace brain_gh_plugin
+namespace Brain_GH_Plugin
 {
-    public class brain_gh_pluginInfo : GH_AssemblyInfo
+    public class Brain_GH_PluginInfo : GH_AssemblyInfo
     {
-        public override string Name => "brain_gh_plugin";
+        public override string Name => "Brain_GH_Plugin";
 
         //Return a 24x24 pixel bitmap to represent this GHA library.
         public override Bitmap Icon => null;
@@ -15,7 +15,7 @@ namespace brain_gh_plugin
         //Return a short string describing the purpose of this GHA library.
         public override string Description => "";
 
-        public override Guid Id => new Guid("fcbe37ea-2048-49e1-9d18-601c4c90c6da");
+        public override Guid Id => new Guid("58108464-30b7-4693-9ecf-6015301b63a9");
 
         //Return a string identifying you or your company.
         public override string AuthorName => "";

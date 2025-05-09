@@ -8,7 +8,7 @@
       "args": [
         "build",
         "-clp:NoSummary",
-        "${workspaceFolder}/brain_gh_plugin.csproj"
+        "${workspaceFolder}/Brain_GH_Plugin.csproj"
       ],
       "problemMatcher": "$msCompile",
       "presentation": {

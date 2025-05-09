@@ -17,9 +17,9 @@
   <PropertyGroup>
     <!-- Specifies information for Assembly and Yak -->
     <Version>1.0</Version>
-    <Title>brain_gh_plugin</Title>
-    <Company>brain_gh_plugin Authors</Company>
-    <Description>Description of brain_gh_plugin</Description>
+    <Title>Brain_GH_Plugin</Title>
+    <Company>Brain_GH_Plugin Authors</Company>
+    <Description>Description of Brain_GH_Plugin</Description>
   </PropertyGroup>
   
   <ItemGroup>
